@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Paws & Preferences</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">P&P</div>
+        <div>
+          <h1>Paws & Preferences</h1>
+          <p class="lead">Swipe right for like • swipe left for dislike</p>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:12px;color:var(--muted)">Total: <strong id="total-count">—</strong></div>
+        <div style="font-size:12px;color:var(--muted)">Liked: <strong id="liked-count">0</strong></div>
+      </div>
+    </header>
+
+    <div class="stack-wrap">
+      <div id="card-stack" class="card-stack">
+        <!-- cards inserted here -->
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="reloadBtn" class="btn ghost">Restart</button>
+    </div>
+
+    <div id="summary" class="summary hidden">
+      <h3 id="summary-title">You liked <span id="summary-count">0</span> cats</h3>
+      <div class="liked-grid" id="liked-grid"></div>
+    </div>
+
+    <div id="loading" class="small">
+      <div class="loader">Loading cats…</div>
+      <div style="margin-top:8px;color:var(--muted);font-size:13px">Tip: this demo uses images from Cataas (cataas.com).</div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
